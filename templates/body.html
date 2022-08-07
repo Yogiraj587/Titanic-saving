@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life in the hands of Reservation</title>
+    <link rel= "stylesheet" href= "{{ url_for('static',filename='styles/beauty.css') }}">
+<body>
+    <h1>Welcome to Life in the hands of Reservation</h1>
+    <h2>There is no guarantee that u live here</h2>
+    <h3>Lets check if u have the luck to live!!!</h3>
+    <div class="form">
+            <form method="POST"  action="{{url_for('predict')}}">
+            <label for="Pclass">Class</label>
+            <input type="text" name="Pclass" placeholder="Enter the value"><br>
+            <label for="Age">Age</label>
+            <input type="text" name="Age" placeholder="Enter the value"><br>
+            <label for="Fare">Fare</label>
+            <input type="text" name="Fare" placeholder="Enter the value"><br>
+            <label for="Sex">Sex</label>
+            <input type="text" name="Sex" placeholder="Enter the value"><br>
+            <input type="submit" value="predict">
+        </form>
+    </div>
+</body>
+</html>
