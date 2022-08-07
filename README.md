@@ -1,3 +1,3 @@
 # Titanic Saving 
 
-Deployment of Titanic saving model
+Model building of Titanic saving and deployment using flask
